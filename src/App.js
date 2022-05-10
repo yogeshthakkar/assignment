@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./Footer";
+import Header from "./Header";
+import PersonalInfo from "./PersonalInfo";
+import RecentPost from "./RecentPost";
+import FeaturedWorks from "./FeaturedWorks";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <PersonalInfo />
+      {/* don't have any recent post so use static data as given in figma */}
+      <RecentPost />
+      <FeaturedWorks />
+      <Footer />
     </div>
   );
 }
